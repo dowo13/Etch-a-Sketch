@@ -3,3 +3,48 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+
+    background-color: azure;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: blueviolet;
+    text-align: center;
+    padding-top: 1%;
+
+}
+#btn{
+    
+    text-align: center;
+}
+.btn-1{
+    font-size: 20px;
+    background-color: chartreuse;
+    margin-top: 1%;
+}
+#container {
+    
+    background-color: yellow;
+    margin: auto;
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(16,1fr);
+    grid-template-rows: repeat(16,1fr);
+    height: 800px;
+    width: 800px;
+}
+.grid-item{
+
+    
+    background-color:yellow;
+    justify-content: center;
+    
+    
+
+}
+.grid-item:hover{
+    
+ opacity: 1;
+}
