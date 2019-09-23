@@ -6,6 +6,7 @@
 body{
 
     background-color: azure;
+
 }
 h1{
     font-family: 'Courier New', Courier, monospace;
@@ -13,32 +14,118 @@ h1{
     color: blueviolet;
     text-align: center;
     padding-top: 1%;
-
 }
+#parent-container{
+
+    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    margin: 1% 20% 1% 20%;
+    border: solid 5px black;
+    border-radius: 25%;
+    box-shadow: 5px 10px;
+    }
 #btn{
     
     text-align: center;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    padding: 2%;
+    
 }
-.btn-1{
+.btn-1:hover{
+
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+
     font-size: 20px;
     background-color: chartreuse;
     margin-top: 1%;
+    grid-column: 2/3;
+    grid-row: 1/2;
 }
+.ran-col {
+
+    grid-column: 1/2;
+    grid-row: 2/4;
+    
+}
+.new-button{
+
+    margin-top: 100%;
+    margin-right: 2%;
+    margin-left: 1%;
+    background-color: lightblue;
+    font-size: 20px;
+    grid-column: 1/2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    l
+    grid-row: 2/4;
+    
+    
+}
+.grey-scale{
+
+    grid-column: 3/4;
+    grid-row: 2/4;
+    
+}
+.new-but1{
+
+    margin-top: 100%;
+    margin-left: 5%;
+    margin-right: 1%;
+    background-color:lightpink;
+    font-size: 20px;
+}
+
 #container {
     
-    background-color: yellow;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: silver;
     margin: auto;
-    margin-top: 3%;
-    display: grid;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    display:grid;
     grid-template-columns: repeat(16,1fr);
     grid-template-rows: repeat(16,1fr);
-    height: 800px;
-    width: 800px;
+    height: 650px;
+    width: 650px;
+    border: 3px  solid black;
+    outline: 3px solid black;
+
 }
 .grid-item{
 
     
-    background-color:yellow;
+    background-color: silver;
     justify-content: center;
     
     
@@ -47,4 +134,9 @@ h1{
 .grid-item:hover{
     
  opacity: 1;
+}
+footer{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1%;
 }
